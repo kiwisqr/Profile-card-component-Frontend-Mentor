@@ -19,6 +19,9 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--dark-cyan);
+  background-image: url("/img/bg-pattern-top.svg"), url(/img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .flex {
@@ -59,6 +62,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #9797978e;
 }
 
 .card-body-pic {
@@ -66,5 +70,44 @@ body {
   border-radius: 50%;
   margin-top: calc(-48px - 5px);
   background-color: #ffffff;
+}
+
+.card-body-name {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.card-body-name span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-body-location {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  padding: 3px;
+}
+
+.card-footer-social h3 {
+  font-size: 1rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=styles.css.map */
